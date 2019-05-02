@@ -8,8 +8,6 @@ fn order(s: &str) -> String {
 
 fn find_num(s: &str) -> usize {
    let j = s.chars().filter(|x| !x.is_alphabetic()).collect::<Vec<_>>();
-   println!("findnum j {}", j[0]);
    let x = j[0] as usize;
-   println!("x: {}", x);
    x - 48
 }
